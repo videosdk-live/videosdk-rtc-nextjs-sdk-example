@@ -97,10 +97,12 @@ export function ParticipantSidePanel({ panelHeight, raisedHandsParticipants }) {
         {[...participants.keys()].map((participantId, index) => {
           const { raisedHand, participantId: peerId } = part[index];
           return (
-            <ParticipantListItem
-              participantId={peerId}
-              raisedHand={raisedHand}
-            />
+            <div key={`participant_${peerId}`}>
+              <ParticipantListItem
+                participantId={peerId}
+                raisedHand={raisedHand}
+              />
+            </div>
           );
         })}
       </div>
