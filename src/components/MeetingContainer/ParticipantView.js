@@ -155,6 +155,7 @@ export function ParticipantsViewer({ isPresenting, sideBarMode }) {
           (_, i) => {
             return (
               <div
+                key={`row_${i}`}
                 className={`flex flex-1 ${
                   isPresenting
                     ? participants.length === 1

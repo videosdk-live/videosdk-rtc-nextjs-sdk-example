@@ -16,7 +16,10 @@ function ParticipantListItem({ participantId, raisedHand, pId }) {
   const theme = useTheme();
 
   return (
-    <div className="mt-2 m-2 p-2 bg-gray-700 rounded-lg mb-0">
+    <div
+      key={`participant_${participantId}`}
+      className="mt-2 m-2 p-2 bg-gray-700 rounded-lg mb-0"
+    >
       <div className="flex flex-1 items-center justify-center relative">
         <Avatar variant={"rounded"}>{displayName?.charAt(0)}</Avatar>
         <div className="ml-2 mr-1 flex flex-1">

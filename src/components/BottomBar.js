@@ -190,6 +190,7 @@ export function BottomBar({
         >
           {micArr.map(({ deviceId, label }, index) => (
             <Box
+              key={`mic_${index}`}
               style={{
                 display: "flex",
                 alignItems: "center",
