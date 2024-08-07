@@ -10,7 +10,7 @@ function ParticipantView({ participantId }) {
     useParticipant(participantId);
   const micRef = useRef(null);
   const mMeeting = useMeeting();
-  const isPresenting = mMeeting.isPresenting;
+  const isPresenting = !!mMeeting.presenterId;
 
   useEffect(() => {
     if (micRef.current) {
