@@ -271,6 +271,7 @@ export default function SettingDialogueBox({
                     ].map(({ value, label }) =>
                       label === "Audio" || label === "Video" ? (
                         <Button
+                         key={label}
                           classes={{
                             root:
                               setting === value

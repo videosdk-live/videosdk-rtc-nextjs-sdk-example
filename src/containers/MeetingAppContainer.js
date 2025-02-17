@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useRef, useState } from "react";
 import { JoiningScreen } from "../components/JoiningScreen";
 import { MeetingContainer } from "../components/MeetingContainer/MeetingContainer";
